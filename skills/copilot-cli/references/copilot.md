@@ -256,7 +256,7 @@
      --log-level debug       # 全部（包括调试）
      --log-level all         # 同 debug
 
-   日志位置： C:\Users\11614\.copilot\logs\
+   日志位置： %USERPROFILE%\.copilot\logs\
 
    -------------------------------------------------------------------------------
 

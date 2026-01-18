@@ -67,15 +67,15 @@ Tip: keep pipes JSON-safe (use ConvertFrom-Json rather than regex).
 ## Optional: deep changes via WSL Codex CLI
 Use this when you want Codex to run in Ubuntu-22.04 (Linux tooling, pinned node/codex) while still working from Windows.
 
-- Preferred entrypoint: `C:\Users\11614\.codex\skills\wsl-codex-cli\scripts\wsl-codex.ps1`
-- Reference: `C:\Users\11614\.codex\skills\wsl-codex-cli\SKILL.md`
+- If you installed `wsl-codex-cli`, run its `scripts/wsl-codex.ps1` from your skills root (path varies by tool).
+- Common location (Windows): `%USERPROFILE%\.codex\skills\wsl-codex-cli\scripts\wsl-codex.ps1`
 
 Example (multi-line prompt via stdin):
 ```powershell
 $prompt = @'
 Analyze this repo and suggest the safest Windows download approach (release assets vs source).
 '@
-$prompt | & 'C:\Users\11614\.codex\skills\wsl-codex-cli\scripts\wsl-codex.ps1'
+$prompt | & "$env:USERPROFILE\.codex\skills\wsl-codex-cli\scripts\wsl-codex.ps1"
 ```
 
 Guardrail: if you need the repo contents inside WSL, prefer cloning inside WSL or passing a small digest (e.g., from gitingest) instead of mounting huge trees.

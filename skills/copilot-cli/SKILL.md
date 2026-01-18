@@ -47,5 +47,4 @@ Tip: to find specifics quickly, use ripgrep:
 ## When to use WSL Codex CLI instead
 - Use Copilot CLI for tight, scoped Q&A and quick best-practice checks.
 - Use WSL Codex CLI when you need Linux-native tooling or long multi-step refactors in Ubuntu.
-- Entry: `C:\Users\11614\.codex\skills\wsl-codex-cli\scripts\wsl-codex.ps1`
-- Reference: `C:\Users\11614\.codex\skills\wsl-codex-cli\SKILL.md`
+- Common location (Windows): `%USERPROFILE%\.codex\skills\wsl-codex-cli\scripts\wsl-codex.ps1`
